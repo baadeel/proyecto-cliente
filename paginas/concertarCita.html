@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img id="logo" src="../img/logo.png" width="200px"></a>
+    </header>
+    <main id="main-concertar">
+        <section id="concertar-cita">
+            <h1 id="titulo">Concertar una cita</h1>
+            <form id="form" action="../index.html" method="post" >
+                <fieldset >
+                    <legend>Cita</legend>
+                    <div class="field-cita">
+                        <label for="apptDate">Fecha y hora de la cita: </label>
+                        <input type="datetime-local" name="apptDate" id="apptDate" required>
+                        <svg viewBox="0 0 512 512" class="icon">
+                            <path
+                                d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z" />
+                        </svg>
+                        <span class="error"></span>
+                    </div>
+                </fieldset>
+                <fieldset id="info-paciente">
+                    <legend>Información del paciente</legend>
+                    <div class="field">
+                        <label for="firstName">Nombre:</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                        <svg viewBox="0 0 512 512" class="icon">
+                            <path
+                                d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z" />
+                        </svg>
+                        <span class="error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="lastName">Apellidos:</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                        <svg viewBox="0 0 512 512" class="icon">
+                            <path
+                                d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z" />
+                        </svg>
+                        <span class="error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="dni">DNI:</label>
+                        <input type="text" name="dni" id="dni" required>
+                        <svg viewBox="0 0 512 512" class="icon">
+                            <path
+                                d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z" />
+                        </svg>
+                        <span class="error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Móvil:</label>
+                        <input type="tel" name="phone" id="phone" maxlength="20" required>
+                        <svg viewBox="0 0 512 512" class="icon">
+                            <path
+                                d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z" />
+                        </svg>
+                        <span class="error"></span>
+                    </div>
+                    <div id="fecha-nacimiento" class="field">
+                        <label for="birthDate">Fecha de nacimiento:</label>
+                        <input name="birthDate" type="date" id="birthDate" required>
+                        <svg viewBox="0 0 512 512" class="icon">
+                            <path
+                                d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z" />
+                        </svg>
+                        <span class="error"></span>
+                    </div>
+                    <div class="field" id="observacionesCampo">
+                        <label for="observaciones">Observaciones:</label>
+                        <textarea name="observaciones" id="observaciones" rows="4"></textarea>
+                    </div>
+                    <div class="buttonForm">
+                        <button onclick="nuevaCita()" type="submit" id="boton">Confirmar cita</button>
+                        <span id="contadorErrores"></span>
+                    </div>
+                    <div id="volver"><a href="../index.html">Volver atrás</a></div>
+                </fieldset>
+
+
+            </form>
+    </main>
+    <footer>
+        <img width="40px" src="../img/logo2.png">
+        <div>&copy;MedacDent</div>
+        <div>
+            <a href="../index.html">Inicio</a>
+            <a href="#">Concertar una cita</a>
+            <a href="consultarCita.html">Lista de citas</a>
+        </div>
+    </footer>
+    <script src="../scripts/validarFormulario.js"></script>
+    <script src="../scripts/objetoCita.js"></script>
+    <script src="../scripts/funcionesCita.js"></script>
+</body>
+
+</html>
